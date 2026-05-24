@@ -3,148 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الدرس الثاني: الوقف بالروم | منصة التجويد التعليمية</title>
+    <title>درس الوقف بالسكون (السكون المحض) | منصة التجويد</title>
     <style>
         :root {
-            --primary-color: #1b4d3e; /* أخضر زمردي غامق فخم */
-            --secondary-color: #c5a059; /* ذهبي ملكي مطفي */
-            --accent-color: #8d6e63; /* بني برونزي هادئ */
-            --bg-color: #f7f9f7; /* خلفية عاجية بلمحة خضراء باردة */
-            --card-bg: #ffffff;
-            --text-dark: #1a1a1a;
-            --text-light: #4a4a4a;
+            --primary-color: #1a5276; /* أزرق غامق ملكي */
+            --secondary-color: #16a085; /* أخضر تيركواز */
+            --accent-color: #d35400; /* برتقالي محروق للتنبيه */
+            --bg-color: #f0f4f8; /* خلفية رمادية فاتحة جداً مريحة */
+            --text-color: #2c3e50;
+            --white: #ffffff;
         }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: var(--bg-color);
-            color: var(--text-dark);
+            color: var(--text-color);
             line-height: 1.8;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background: linear-gradient(135deg, #1b4d3e 0%, #2e7d32 100%);
-            color: #f1f1f1;
-            padding: 4rem 1rem;
+            background: linear-gradient(135deg, #1a5276 0%, #16a085 100%);
+            color: white;
+            padding: 3rem 1rem;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-            border-bottom: 5px solid var(--secondary-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-bottom: 5px solid var(--accent-color);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.8rem;
-            font-weight: 900; /* Bold عريض جداً */
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-            letter-spacing: 1px;
+            font-size: 2.5rem;
+            font-weight: 800; /* Bold */
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         header p {
-            font-size: 1.3rem;
-            font-weight: 600; /* Bold متوسط */
-            opacity: 0.95;
-            margin-top: 15px;
-            color: var(--secondary-color);
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 10px;
+            font-weight: bold;
         }
 
         .container {
             max-width: 1000px;
-            margin: -50px auto 50px;
-            background: var(--card-bg);
-            padding: 45px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            margin: -30px auto 40px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
             position: relative;
-            border: 1px solid rgba(197, 160, 89, 0.2);
         }
 
-        .intro {
-            background-color: #f1f8f5;
-            padding: 25px;
-            border-radius: 15px;
-            border-right: 6px solid var(--secondary-color);
-            font-size: 1.15rem;
-            margin-bottom: 3rem;
-            color: var(--text-dark);
-            line-height: 2;
-            font-weight: 500;
-        }
-
-        h2, h3 {
+        h2, h3, h4 {
             color: var(--primary-color);
-            font-weight: 800; /* العناوين بخط Bold */
+            font-weight: 800; /* Bold */
             border-right: 6px solid var(--secondary-color);
             padding-right: 15px;
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
-        h2 { font-size: 2.1rem; }
-        h3 { font-size: 1.7rem; color: #2e7d32; }
+        h2 { font-size: 1.8rem; }
+        h3 { font-size: 1.5rem; color: #2471a3; }
 
-        .definition-clean {
-            padding: 20px 15px;
-            margin: 25px 0;
-            font-size: 1.3rem;
+        .intro {
+            background-color: #fdfefe;
+            padding: 20px;
+            border-radius: 12px;
             border-right: 4px solid var(--secondary-color);
-            background: #fffcf5;
-            border-radius: 0 10px 10px 0;
+            font-style: italic;
+            margin-bottom: 2.5rem;
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.02);
+            font-weight: 500;
+            color: #555;
         }
 
-        .definition-clean strong {
-            color: var(--primary-color);
-            font-size: 1.45rem;
-            font-weight: 900;
-        }
-
-        details {
-            margin-bottom: 20px;
-            border: 1px solid #e8ede9;
+        .definition-box {
+            background: linear-gradient(to left, #e8f8f5, #ffffff);
+            border: 1px solid #a3e4d7;
+            padding: 25px;
             border-radius: 15px;
-            transition: all 0.3s ease;
-            background: #fff;
+            margin: 25px 0;
+            font-size: 1.2rem;
+            position: relative;
+        }
+
+        /* تنسيق القوائم المنسدلة */
+        details {
+            margin-bottom: 15px;
+            border: 2px solid #e5e8e8;
+            border-radius: 12px;
             overflow: hidden;
+            transition: all 0.3s ease;
         }
 
         details[open] {
             border-color: var(--secondary-color);
-            box-shadow: 0 8px 25px rgba(27, 77, 62, 0.1);
+            box-shadow: 0 5px 15px rgba(22, 160, 133, 0.1);
         }
 
         summary {
-            font-weight: 800; /* Bold للسؤال أو العنوان المنسدل */
-            font-size: 1.3rem;
+            font-weight: 800; /* Bold */
+            font-size: 1.25rem;
+            color: var(--white);
             background-color: var(--primary-color);
-            color: #fff;
             cursor: pointer;
-            padding: 20px 25px;
+            padding: 15px;
             list-style: none;
-            display: flex;
-            align-items: center;
-            border-bottom: 2px solid var(--secondary-color);
+            transition: background 0.3s;
+        }
+
+        summary:hover {
+            background-color: #21618c;
         }
 
         summary::before {
-            content: "◆";
-            margin-left: 12px;
-            color: var(--secondary-color);
+            content: "◀";
+            margin-left: 10px;
+            font-size: 0.9rem;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
+        details[open] summary::before {
+            transform: rotate(-90deg);
         }
 
         .example {
             display: inline-block;
-            background: #f8fcf9;
-            color: var(--primary-color);
-            padding: 6px 18px;
-            border-radius: 10px;
-            font-weight: 900; /* الكلمات القرآنية Bold */
-            font-family: 'Traditional Arabic', serif;
-            font-size: 1.8rem;
-            border: 1px solid rgba(197, 160, 89, 0.3);
-            border-bottom: 4px solid var(--secondary-color);
-            margin: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: #fff3e0;
+            color: #e67e22;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-family: 'Traditional Arabic', 'Amiri', serif;
+            font-size: 1.4rem;
+            border: 1px solid #ffe0b2;
+            margin: 2px;
         }
 
         table {
@@ -152,170 +148,155 @@
             border-collapse: separate;
             border-spacing: 0;
             margin: 25px 0;
-            border-radius: 15px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
 
         th {
-            background-color: var(--primary-color);
-            color: var(--secondary-color);
-            padding: 20px;
-            font-size: 1.2rem;
-            font-weight: 800;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
         }
 
         td {
-            padding: 18px;
-            border-bottom: 1px solid #f1f1f1;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            border-left: 1px solid #eee;
             text-align: center;
-            background: #fff;
-            font-weight: 500;
+            background-color: #fff;
         }
 
+        tr:last-child td { border-bottom: none; }
+
         .note {
-            border-right: 8px solid var(--secondary-color);
-            background: #fefefa;
-            padding: 30px;
-            margin: 45px 0;
-            border-radius: 15px;
-            box-shadow: inset 0 0 10px rgba(197, 160, 89, 0.1);
+            border-right: 6px solid var(--accent-color);
+            background: #fef5e7;
+            padding: 20px 25px;
+            margin: 30px 0;
+            border-radius: 0 10px 10px 0;
+            color: #873600;
         }
 
         .note strong {
-            color: var(--primary-color);
+            color: var(--accent-color);
+            font-size: 1.2rem;
             display: block;
             margin-bottom: 10px;
-            font-size: 1.3rem;
-            font-weight: 900;
-            text-decoration: underline;
-            text-underline-offset: 5px;
         }
 
         footer {
             text-align: center;
-            padding: 4rem;
-            background-color: #122d25;
-            color: #c5a059;
-            margin-top: 60px;
-            border-top: 4px solid var(--secondary-color);
+            padding: 3rem;
+            background-color: var(--primary-color);
+            color: white;
+            margin-top: 50px;
         }
 
+        footer p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        ul li {
+            margin-bottom: 12px;
+        }
+
+        /* تحسينات للشاشات الصغيرة */
         @media (max-width: 600px) {
-            .container { padding: 25px; margin: -30px 15px 30px; }
-            header h1 { font-size: 2.1rem; }
-            header { padding: 3.5rem 1rem; }
+            .container { padding: 20px; margin: -20px 10px 20px; }
+            header h1 { font-size: 1.8rem; }
+            table { font-size: 0.9rem; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>الدرس الثاني: الوقف بالروم</h1>
-    <p>سلسلة باب الوقف على أواخر الكلم</p>
+    <h1>الدرس الأول: الإسكان</h1>
+    <p>باب الوقف على أواخر الكلم</p>
 </header>
 
 <div class="container">
     <div class="intro">
-        <b>بسم الله الرحمن الرحيم، الحمد لله والصلاة والسلام على رسول الله</b> <br>
-        ⬅️ نرحب بكم في درس جديد من دروس التجويد وهو <b>الروم</b>.
+        بسم الله الرحمن الرحيم، والحمد لله والصلاة والسلام على رسول الله... حياكم الله في درس جديد من دروس التجويد.
     </div>
 
-    <h2>🔍 أولاً: تعريف الروم</h2>
-    <div class="definition-clean">
-        <strong>لغةً:</strong> الطلب، يقال رام الشيء أي طلبه. <br>
-        <strong>اصطلاحاً:</strong> هو النطق ببعض الحركة (ثلثها) بصوت خفي يسمعه القريب دون البعيد.
+    <h2>📗 تعريف الوقف بالسكون (الذي يكون سكون محض)</h2>
+    <div class="definition-box">
+        هو <strong>السكون الخالص من الحركة</strong>، أو تفريغ الحرف من الحركات الثلاث (الفتحة، الضمة، الكسرة) عند الوقف عليه.
     </div>
 
-    <h3>أين يكون الروم؟</h3>
-    <p>يدخل الروم في الحركات "الضعيفة" (الضمة والكسرة) ولا يدخل في الفتحة لخفتها:</p>
-    <ul>
-        <li><strong>المرفوع والمضموم:</strong> سواء كان معرباً أو مبنياً مثل: <span class="example">نستعينُ</span> ، <span class="example">حيثُ</span>.</li>
-        <li><strong>المجرور والمكسور:</strong> سواء كان معرباً أو مبنياً مثل: <span class="example">الرحيمِ</span> ، <span class="example">هؤلاءِ</span>.</li>
-    </ul>
+    <h3>أنواع السكون عند الوقف:</h3>
 
-    <h2>📖 تفاصيل وأمثلة تطبيقية</h2>
-
+    <!-- أولا: السكون الأصلي -->
     <details>
-        <summary>الروم والمد العارض للسكون</summary>
-        <div style="padding: 20px;">
-            <p>قاعدة ذهبية: <strong>"الروم كالوصل"</strong>.</p>
+        <summary>أولاً : السكون الأصلي</summary>
+        <div style="padding: 15px;">
+            <p>هو أن يكون الحرف ساكناً في أصله وصلاً ووقفاً.</p>
+            
+            <h4>أمثلة السكون الأصلي</h4>
             <ul>
-                <li>عند الوقف بالروم على مد عارض للسكون، لا يجوز إلا <strong>القصر (حركتين)</strong> فقط.</li>
-                <li>لماذا؟ لأننا نأتي بجزء من الحركة، فتعامل الكلمة معاملة الوصل.</li>
+                <li><strong>حروف المد واللين:</strong> مثل <span class="example">مَا</span> ، <span class="example">هَا</span> ، <span class="example">جَعَلُوا</span>.</li>
+                <li><strong>حرفا اللين (الواو والياء):</strong> ساكنة وما قبلها مفتوح مثل <span class="example">تَوَلَّوْا</span> ، <span class="example">طَرَفَيْ</span>.</li>
+                <li><strong>الأفعال المبنية على السكون:</strong> مثل فعل الأمر <span class="example">اقْرَأْ</span>.</li>
+                <li><strong>الأفعال المجزومة:</strong> مثل <span class="example">أَلَمْ تَعْلَمْ</span>.</li>
+                <li><strong>الأحرف والأسماء المبنية:</strong> مثل <span class="example">عَنْ</span> ، <span class="example">مَنْ</span> ، <span class="example">كَمْ</span>.</li>
+                <li><strong>ميم الجمع:</strong> مثل <span class="example">عَلَيْهِمْ</span>.</li>
+                <li><strong>الحروف المقطعة:</strong> في فواتح السور مثل <span class="example">ق</span> ، <span class="example">ن</span>.</li>
             </ul>
         </div>
     </details>
 
+    <!-- ثانيا: السكون العارض -->
     <details>
-        <summary>الروم عند التنوين</summary>
-        <div style="padding: 20px;">
-            <p>إذا كانت الكلمة منونة (تنوين ضم أو كسر)، نقوم بحذف التنوين أولاً ثم نأتي بثلث الحركة.</p>
+        <summary>ثانياً : السكون العارض</summary>
+        <div style="padding: 15px;">
+            <p>هو أن يكون الحرف متحركاً في الأصل، ثم يُسكن لأجل الوقف فقط.</p>
+            
+            <p><strong>كلام يتم فيه عزْل الحركة عن الحرف الأخير لتحويله إلى سكون عند الوقف :</strong></p>
             <table>
-                <tr>
-                    <th>الكلمة</th>
-                    <th>كيفية الوقف بالروم</th>
-                </tr>
-                <tr>
-                    <td><span class="example">عليمٌ</span></td>
-                    <td>نطق الميم بضمة خفيفة جداً (بدون تنوين) مع حركتين فقط.</td>
-                </tr>
-                <tr>
-                    <td><span class="example">خبيرٍ</span></td>
-                    <td>نطق الراء بكسرة خفيفة جداً (بدون تنوين).</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>الكلمة وصلاً</th>
+                        <th>عند الوقف (سكون محض)</th>
+                        <th>نوع الحركة المحذوفة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>الْعَالَمِينَ (مفتوحة)</td>
+                        <td><span class="example">الْعَالَمِينْ</span></td>
+                        <td>الفتحة</td>
+                    </tr>
+                    <tr>
+                        <td>الرَّحْمَنِ (مكسورة)</td>
+                        <td><span class="example">الرَّحْمَنِ</span></td>
+                        <td>الكسرة</td>
+                    </tr>
+                    <tr>
+                        <td>نَسْتَعِينُ (مضمومة)</td>
+                        <td><span class="example">نَسْتَعِينْ</span></td>
+                        <td>الضمة</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </details>
 
-    <details>
-        <summary>أحكام الراء مع الروم (تفخيماً وترقيقاً)</summary>
-        <div style="padding: 20px;">
-            <p>بما أن الروم كالوصل، فإن الراء تتبع حالتها في الوصل:</p>
-            <ul>
-                <li><span class="example">خَيرٌ</span> : عند السكون (ترقق)، عند <strong>الروم (تُفخم)</strong> لأنها في الوصل مضمومة.</li>
-                <li><span class="example">تخسيرٍ</span> : عند السكون (ترقق)، عند <strong>الروم (ترقق)</strong> لأنها في الوصل مكسورة.</li>
-            </ul>
-        </div>
-    </details>
-
-    <h2>🚫 ثانياً: موانع الروم</h2>
-    <p>هناك حالات يمتنع فيها الروم تماماً ويجب الوقف بالسكون المحض فقط:</p>
-    
-    <details>
-        <summary>عارض الشكل</summary>
-        <div style="padding: 20px;">
-            <p>وهو أن يكون الحرف تحرك بحركة غير أصلية للتخلص من التقاء الساكنين، فلا روم فيها.</p>
-            <p><strong>أمثلة:</strong> <span class="example">ولقدِ استُهزئ</span> ، <span class="example">ومن يشاققِ الرسول</span></p>
-        </div>
-    </details>
-
-    <details>
-        <summary>ميم الجمع</summary>
-        <div style="padding: 20px;">
-            <p>وهي الميم الدالة على الجمع المذكر، إذا حُركت بالضم للتخلص من التقاء الساكنين فهي مانع من موانع الروم.</p>
-            <p><strong>مثال:</strong> <span class="example">عليهمُ القتال</span></p>
-        </div>
-    </details>
-
-    <details>
-        <summary>تاء التأنيث المرسومة هاءً</summary>
-        <div style="padding: 20px;">
-            <p>وهي التاء المربوطة التي يُوقف عليها بالهاء، هي مانع من موانع الروم ويوقف عليها بالسكون فقط.</p>
-            <p><strong>أمثلة:</strong> <span class="example">جنة</span> ، <span class="example">نعمة</span></p>
-        </div>
-    </details>
-
     <div class="note">
-        <strong>💡 مسألة هاء الكناية:</strong>
-        اختلف فيها العلماء، والمختار عند ابن الجزري هو "التفصيل"، وسنفرد لها لقاءً خاصاً بإذن الله لأهميتها ودقتها.
+        <strong>⚠️ قاعدة هامة:</strong>
+        في <strong>السكون الأصلي</strong>: ليس لنا إلا الوقف بالسكون المحض فقط.
+        <br><br>
+        في <strong>السكون العارض</strong>: قد يدخل الروم أو الإشمام حسب حركة الحرف (سنفصله في اللقاءات القادمة).
     </div>
-
 </div>
 
 <footer>
-    <p>نسأل الله أن يتقبل منا ومنكم صالح الأعمال</p>
-    <p>تم إعداد المادة العلمية لتبسيط علوم التجويد © 2026</p>
+    <p>نسأل الله أن يجعل هذا العمل خالصاً لوجهه الكريم</p>
+    <p>وصلى الله وسلم على سيدنا محمد وعلى آله وصحبه أجمعين</p>
 </footer>
 
 </body>
